@@ -8,7 +8,7 @@
     <link href="/2024/03/24/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
     <url>/2024/03/24/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>实验步骤与内容：</p><p>一、准备工作</p><ol><li><p>GitHub账号<br>需要有一个GitHub账号</p></li><li><p>安装Git<br>在自己电脑上安装好Git，hexo部署到GitHub时要用。</p></li><li><p>安装NodeJS<br>在自己电脑上安装好NodeJS，Hexo是基于NodeJS编写的，所以需要安装NodeJS和npm工具。<br>二、创建仓库<br>在GitHub上创建一个新的代码仓库用于保存我们的网页。</p></li></ol><p>三、安装Hexo<br>安装 Hexo<br>npm install -g hexo-cli</p><p>查看版本<br>hexo -v</p><p>创建一个项目 hexo-blog 并初始化<br>hexo init hexo-blog<br>cd hexo-blog<br>npm install</p><p>本地启动<br>hexo g<br>hexo server</p><p>浏览器访问 <a href="http://localhost:4000，页面默认主图风格如下">http://localhost:4000，页面默认主图风格如下</a></p><p>四、更换Fluid主题<br>安装主题<br>下载 最新 release 版本 解压到 themes 目录，并将解压出的文件夹重命名为 fluid。</p><p>指定主题<br>如下修改 Hexo 博客目录中的 _config.yml：<br>theme: fluid  # 指定主题<br>language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改</p><p>创建「关于页」<br>首次使用主题的「关于页」需要手动创建：<br>hexo new page about<br>创建成功后，编辑博客目录下 &#x2F;source&#x2F;about&#x2F;index.md，添加 layout 属性。<br>修改后的文件示例如下：</p><p>本地启动<br>hexo g -d<br>hexo s</p><p>浏览器访问 <a href="http://localhost:4000，Fluid主题风格页面如下">http://localhost:4000，Fluid主题风格页面如下</a></p><p>五、创建文章<br>如下修改 Hexo 博客目录中的 _config.yml，打开这个配置是为了在生成文章的时候生成一个同名的资源目录用于存放图片文件。<br>post_asset_folder: true<br>执行如下命令创建一篇新文章，名为《测试文章》<br>hexo new post 测试文章<br>执行完成后在source_posts目录下生成了一个md文件和一个同名的资源目录(用于存放图片)</p><p>在资源目录测试文章中放一张图片 test.png</p><p>在测试文章.md中添加内容如下，</p>]]></content>
     
     
     
